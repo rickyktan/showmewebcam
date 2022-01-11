@@ -70,6 +70,8 @@ EOF
 
 config_usb_webcam () {
   mkdir -p functions/uvc.usb0/control/header/h
+  
+  config_frame mjpeg m 1640  922
 
   if [ -r $VIDEO_FORMATS_USER_FILE ] ; then
     FORMATS_FILE=$VIDEO_FORMATS_USER_FILE
